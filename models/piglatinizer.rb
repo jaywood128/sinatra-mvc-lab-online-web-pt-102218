@@ -34,7 +34,6 @@ class PigLatinizer
        remove = array.shift
        array.push(remove).push("ay").join("")
      elsif vowels.include?(array[0]) && vowels.include?(array[1]) && !vowels.include?(array[2]) && !vowels.include?(array[3])
-       binding.pry
        array.push("way").join("")
     end
   end
